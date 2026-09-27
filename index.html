@@ -1,13 +1,57 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Evidence Adjudicator — verify real-world claims against public web evidence using GenLayer validator consensus." />
-    <title>Evidence Adjudicator</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence Adjudicator — a GenLayer Intelligent Contract for consensus-backed verification of real-world claims.">
+<title>Evidence Adjudicator</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f6f5f2;color:#17171b;font-family:Inter,Arial,sans-serif}
+a{text-decoration:none;color:inherit}.nav{height:72px;border-bottom:1px solid #dfddd7;display:flex;align-items:center;justify-content:space-between;padding:0 7%;background:#f6f5f2}
+.brand{font-weight:800;display:flex;gap:10px;align-items:center}.mark{background:#17171b;color:#fff;border-radius:10px;padding:9px 10px;font-size:12px}
+.links{display:flex;gap:20px;align-items:center;font-size:14px;color:#5e5c63}.btn{background:#17171b;color:#fff;padding:10px 15px;border-radius:10px;font-weight:700}
+main{max-width:1050px;margin:auto;padding:70px 25px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.13em;color:#6958d9}
+h1{font-size:clamp(48px,7vw,82px);line-height:.98;letter-spacing:-.06em;margin:18px 0}h1 span{color:#6958d9}
+.hero p{max-width:720px;font-size:19px;line-height:1.65;color:#6d6a72}.actions{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.outline{border:1px solid #d8d5cf;background:#fff;padding:11px 15px;border-radius:10px;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:65px 0 25px}.card,.contract{background:#fff;border:1px solid #dfddd7;border-radius:20px;padding:25px}.card h3{margin:12px 0 8px}.card p{color:#716e75;line-height:1.55;font-size:14px}.num{font-size:11px;color:#888}
+.contract{margin-top:16px}.contract h2{margin:6px 0 20px;font-size:28px}.row{padding:15px 0;border-top:1px solid #ece9e3;display:flex;justify-content:space-between;gap:20px}.label{color:#888;font-size:12px;font-weight:700}.value{font-family:monospace;font-size:13px;text-align:right;word-break:break-all}.value a{color:#5d4dcb}
+footer{text-align:center;border-top:1px solid #dfddd7;padding:25px;color:#89868d;font-size:12px}
+@media(max-width:700px){.links a:not(.btn){display:none}.grid{grid-template-columns:1fr}.nav{padding:0 18px}main{padding:50px 18px}}
+</style>
+</head>
+<body>
+<header class="nav">
+<a class="brand" href="#"><span class="mark">EA</span>Evidence Adjudicator</a>
+<nav class="links">
+<a href="#how">How it works</a>
+<a href="https://github.com/Arnabroy2021/genlayer-builder-project" target="_blank">GitHub</a>
+<a class="btn" href="https://explorer-studio.genlayer.com/address/0x6bAa91F409CF5f88a2c59624Bf8C4eF50f238856" target="_blank">View Contract</a>
+</nav>
+</header>
+<main>
+<section class="hero">
+<div class="eyebrow">GENLAYER INTELLIGENT CONTRACT</div>
+<h1>Verify claims with<br><span>evidence + consensus.</span></h1>
+<p>Evidence Adjudicator evaluates real-world claims against public web evidence. GenLayer validators independently assess the evidence and reach consensus before the final result is stored on-chain.</p>
+<div class="actions">
+<a class="btn" href="https://explorer-studio.genlayer.com/address/0x6bAa91F409CF5f88a2c59624Bf8C4eF50f238856" target="_blank">Open GenLayer Explorer ↗</a>
+<a class="outline" href="https://github.com/Arnabroy2021/genlayer-builder-project" target="_blank">View source code ↗</a>
+</div>
+</section>
+<section id="how" class="grid">
+<article class="card"><div class="num">01</div><h3>Public evidence</h3><p>A claim is evaluated against a public HTTPS evidence source.</p></article>
+<article class="card"><div class="num">02</div><h3>Validator consensus</h3><p>Independent validators analyze the evidence and compare their substantive result.</p></article>
+<article class="card"><div class="num">03</div><h3>On-chain result</h3><p>The agreed verdict, confidence and reason can be persisted after consensus succeeds.</p></article>
+</section>
+<section class="contract">
+<div class="eyebrow">DEPLOYED CONTRACT</div>
+<h2>Evidence Adjudicator on GenLayer</h2>
+<div class="row"><span class="label">NETWORK</span><span class="value">GenLayer Studio / Studionet</span></div>
+<div class="row"><span class="label">CONTRACT</span><span class="value">0x6bAa91F409CF5f88a2c59624Bf8C4eF50f238856</span></div>
+<div class="row"><span class="label">EXPLORER</span><span class="value"><a href="https://explorer-studio.genlayer.com/address/0x6bAa91F409CF5f88a2c59624Bf8C4eF50f238856" target="_blank">Open contract explorer ↗</a></span></div>
+<div class="row"><span class="label">SOURCE</span><span class="value"><a href="https://github.com/Arnabroy2021/genlayer-builder-project" target="_blank">GitHub repository ↗</a></span></div>
+</section>
+</main>
+<footer>Evidence Adjudicator · Built for GenLayer Intelligent Contract exploration</footer>
+</body>
 </html>
